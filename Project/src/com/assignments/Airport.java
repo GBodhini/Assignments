@@ -36,7 +36,7 @@ public class Airport
 
 	        {
 
-	        Traveller.add(traveller);
+	        traveller.addTraveller(traveller);
 
 	        flights.get(i).setAvailableSeats(flights.get(i).getAvailableSeats()-1);
 
@@ -44,6 +44,11 @@ public class Airport
 
 	    }
 
+	}
+	public boolean addTraveller(Traveller newtraveller)
+	{	
+		traveller.add(newtraveller);
+		return true;
 	}
 }	
 	
