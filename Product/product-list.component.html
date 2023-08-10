@@ -1,0 +1,15 @@
+<table align="center" width="50%" border="1">
+    <caption>Product Details</caption>
+    <tr>
+        <th>Product Id</th>
+        <th>Product Name</th>
+        <th>Product Category</th>
+        <th>Product Price</th>
+    </tr>
+    <tr *ngFor="let p of productList">
+        <td>{{p.productId}}</td>
+        <td>{{p.productName}}</td>
+        <td>{{p.productCategory}}</td>
+        <td>{{p.productPrice}}</td>
+    </tr>
+</table>
